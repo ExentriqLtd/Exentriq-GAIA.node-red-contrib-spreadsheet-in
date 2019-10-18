@@ -6,7 +6,7 @@ module.exports = function(RED) {
 		var node = this;
 		node.on('input', function(msg) {
 			var option = {
-				type: typeof msg.payload === "string" ? "string" : "buffer",
+				type: "buffer",
 				raw: false,
 				// dateNF: "yyyy-mm-dd",
 				password: undefined,
